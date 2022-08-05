@@ -1,0 +1,59 @@
+:root{
+    --c1:#94B49F;
+    --c2:#CEE5D0;
+    --c3:#FCF8E8;
+    --c4:#da7c41;
+}
+body{
+    color: var(--c3);
+    background-color: var(--c1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+body, h2, div, input, button{
+    padding: 0;
+    margin: 0;
+}
+.nombres{
+    margin: 3em;
+}
+#agregar{
+    background-color: var(--c4);
+    color: var(--c3);
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+.nombre{
+    display: grid;
+    grid-template-columns: minmax(14em, 42em) 1fr;
+    border-top: 2px solid var(--c4);
+    
+}
+.nombre h2{
+    padding: 0.3em;
+}
+#nombre{
+    padding: 0.5em 0.8em;
+}
+.options{
+    display: flex;
+    justify-self: end;
+}
+.options button{
+    background-color: transparent;
+    border: none;
+    margin: 0.9em 0.8em;
+    color: var(--c3);
+    outline: none;
+}
+.eliminar:hover{
+    color: var(--c4);
+}
+.imposible{
+    color: #572424;
+}
+.posible{
+    color: var(--c4);
+}
